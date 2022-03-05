@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #eee;
+}
+.container_p {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_p p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container_p p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container_p p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container_p p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+
+.nav-link
+{
+color: #dd7732;
+text-decoration: none;
+}
+.nav-link:hover{
+    color: white;
+}
+
+
+.fa:hover {
+    color: #ff6600;
+    text-decoration: none;
+  }
+.fa{
+    color: white;
+    margin: 5%;
+}  
+
+/* effects */
+
+
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+/* the contact us jumping effect */
+@keyframes float {
+0% {
+box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+transform: translatey(0px);
+}
+50% {
+box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+transform: translatey(-20px);
+}
+100% {
+box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+transform: translatey(0px);
+}
+}
+
+.container {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.avatar {
+width: 150px;
+height: 150px;
+box-sizing: border-box;
+border: 0px ;
+border-radius: 50%;
+overflow: hidden;
+box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+transform: translatey(0px);
+animation: float 6s ease-in-out infinite;
+
+}
+.avatar img { width: 100%; height: auto; }
+
+
+.content {
+width: 100%;
+max-width: 600px;
+padding: 20px 40px;
+box-sizing: border-box;
+text-align: center;
+}
+
+
+
+
+
