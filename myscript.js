@@ -40,9 +40,6 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-
-
-
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 

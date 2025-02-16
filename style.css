@@ -134,7 +134,45 @@ box-sizing: border-box;
 text-align: center;
 }
 
+/* Updated styling */
+body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
 
+.nav-link {
+  color: #ff6600;
+}
 
+.nav-link:hover {
+  color: #ffffff;
+}
 
+.fa:hover {
+  color: #ff9900;
+}
 
+.container_p p {
+  font-size: 3.5rem;
+}
+
+.reveal {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+.content {
+  max-width: 700px;
+  padding: 30px 50px;
+}
